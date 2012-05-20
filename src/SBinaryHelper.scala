@@ -16,4 +16,5 @@ trait SBinaryHelper {
       println( t + " is (un)serializable." )
     else
       println( t + " (un)serialization failed !" )
+
 }

@@ -22,8 +22,14 @@ object Stub extends App with SBinaryHelper {
   val person1 = Person( "Jane Doe", 43, Some(job1) )
   checkFormat( person1 )
 
+  val ary = Vector( 1, 2, 3 )
+  checkFormat( ary )
   //checkFormat[Either[Double,String]]( Left(2.0) )
 
-  
+  val green = new RGB( 0, 255, 0 )
+  checkFormat( green )
 
+  checkFormat[Color]( Blue )
+
+  checkFormat( Vector( green, White ) )
 }
